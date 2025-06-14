@@ -2,7 +2,7 @@ import json
 import torch
 from torch.utils.data import DataLoader
 from diffusion_pipe.datasets.audio_video_dataset import AudioVideoDataset
-from diffusion_pipe.pipelines.wan21 import Wan21Pipeline
+from diffusion_pipe.models.wan import WanPipeline
 from diffusion_pipe.trainers.lora_av_trainer import LoRAAVTrainer
 from accelerate import Accelerator
 
