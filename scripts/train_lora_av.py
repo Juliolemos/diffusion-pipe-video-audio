@@ -12,7 +12,7 @@ def main():
     dataset = AudioVideoDataset(manifest)
     dataloader = DataLoader(dataset, batch_size=2, shuffle=True)
 
-    model = Wan21Pipeline.from_pretrained("tdrussell/wang2.1").cuda()
+    model = Wan21Pipeline.from_pretrained("tdrussell/wan2.1").cuda()
     trainer = LoRAAVTrainer(model, dataloader, accelerator)
     trainer.train(num_epochs=10)
 
